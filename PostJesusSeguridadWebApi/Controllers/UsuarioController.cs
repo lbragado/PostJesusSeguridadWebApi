@@ -16,14 +16,14 @@ namespace PostJesusSeguridadWebApi.Controllers
             modelo = new ModeloUsuario();
         }
 
-        [Authorize(Roles ="ADMINISTRADOR")]
+        //[Authorize(Roles ="ADMINISTRADOR")]
         public String Get()
         {
             return modelo.GetMensajeAdmin();
         }
 
        [HttpGet]
-        [Authorize(Roles = "USUARIO")]
+        //[Authorize(Roles = "USUARIO")]
         [Route("api/currito")]
         public String usuario()
         {
